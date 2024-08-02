@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>SignIn</title>
+        <link rel="stylesheet" href="Styles5.css">
+    </head>
+    <body style="background-image:url(images/sign.jpg);"class="page" onload="signin()">
+        <div class="page">
+            <div class="nav">
+                <h3 class="logo">
+                    <font face="logo" size="9" style="color:antiquewhite">𝕱𝖑𝖆𝖛𝖔𝖚𝖗 𝕱𝖚𝖘𝖎𝖔𝖓</font>
+                </h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Recipes.html">Recipes</a></li>
+                    <li><a href="./Recipes.html">Fusion</a></li>
+                    <li><a href="./AboutUs.html">AboutUs</a></li>
+                    <li><a href="./ContactUs.html">ContactUs</a></li>
+                    <li><a href="./SignIn.html">SignIn</a></li>
+                </ul>
+            </div>
+            <div class="p">
+            <div class="box">
+                <div class="button">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle" onclick="login()">LogIn</button>
+                    <button type="button" class="toggle" onclick="signin()">SignUp</button>
+                </div>
+                <form id="login" class="ip1"  onsubmit="log(event)">
+                    <input type="text" class="inp2" placeholder="userid" required>
+                    <input type="text" class="inp2" placeholder="Enter password" required>
+                    <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                    <button type="submit" class="submit-box">Log In</button>
+                </form>
+                <form id="signin" class="ip1" onsubmit="register(event)">
+                    <input type="text"class="inp2" placeholder="userid" required>
+                    <input type="Email" class="inp2" placeholder="Enter email" required>
+                    <input type="text" class="inp2" placeholder="Enter Password" required>
+                    <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions</span>
+                    <button type="submit" class="submit-box" onsubmit="login()">Register</button>
+                </form>
+                <script>
+                    var x=document.getElementById('login');
+                    var y=document.getElementById('signin');
+                    var z=document.getElementById('btn');
+                    function signin(){
+                        x.style.left="-400px";
+                        y.style.left="50px";
+                        z.style.left="110px";
+                    }
+                    function login(){
+                        x.style.left="50px";
+                        y.style.left="450px";
+                        z.style.left="0px";
+                    }
+                    function register(event) {
+                        event.preventDefault();
+                        login();
+                    }
+                    function log(event) {
+                        event.preventDefault();
+                        login();
+                    }
+                </script>
+            </div>
+        </div>
+        <footer style="text-align: center;background-color: rgb(161, 171, 179);padding-bottom: 2%;padding-top: 2%;transform: translateY(-140%);"><b>
+            &copy;2024 Lohitha's Company.<br>
+            All rights are reserved.<br>
+            flavourFusion@gmail.com<br>
+            Ongole<br>
+            Andhra Pradesh<br>
+        </b>
+         </footer>    
+    </body>
+</html>

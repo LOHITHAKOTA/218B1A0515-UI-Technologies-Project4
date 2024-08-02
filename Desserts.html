@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <title>Desserts</title>
+        <link rel="stylesheet" href="Styles5.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            td{
+                padding-block: 2px;
+                padding: 2px;
+             }
+            
+        </style>
+    </head>
+    <body style="background-image: url(images/Desserts/desserts.jpg);"class="page">
+        <div class="page">
+            <div class="nav">
+                <h3 class="logo">
+                    <font face="logo" size="9" style="color:antiquewhite">𝕱𝖑𝖆𝖛𝖔𝖚𝖗 𝕱𝖚𝖘𝖎𝖔𝖓</font>
+                </h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Recipes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(104, 29, 104);">
+                            <a class="dropdown-item" href="./Breakfast.html">Breakfast</a>
+                            <a class="dropdown-item" href="./Lunch.html">Lunch</a>
+                            <a class="dropdown-item" href="./Desserts.html">Desserts</a>
+                            <a class="dropdown-item" href="./Salads.html">Salads</a>
+                        </div>
+                    </li>
+                    <li><a href="./Recipes.html">Fusion</a></li>
+                    <li><a href="./AboutUs.html">AboutUs</a></li>
+                    <li><a href="./ContactUs.html">ContactUs</a></li>
+                    <li><a href="./SignIn.html">SignIn</a></li>
+                </ul>
+            </div>
+        <div class="b">
+            <h1>A Great way to express your love for all things sweet and decadent.</h1>
+            <p>Cooking is like love. It should be entered into with abandon or not at all.</p><br/><br>
+        </div>
+    </div>
+    <div class="r">
+        <center>
+            <table class="t">
+                <tr>
+                    <td><a href="#"><img src="images/Desserts/v1.jpg" style="background-size: cover;display: flex;width: 170px;height: 270px;"></a></td>
+                    <td><a href="#"><img src="images/Desserts/v2.jpg" style="background-size: cover;display: flex;width: 170px;height: 270px;"></a></td>
+                    <td><a href="#"><img src="images/Desserts/v3.jpg" style="background-size: cover;display: flex;width: 170px;height: 270px;"></a></td>
+                    <td><a href="#"><img src="images/Desserts/v4.jpg" style="background-size: cover;display: flex;width: 170px;height: 270px;"></a></td>
+                </tr>
+            </table>
+        </center>
+        <h1 style="color:rgb(202, 234, 157);text-align: center;font-size: xxx-large;"><b>Desserts</b></h1>
+        <div class="gallery"> 
+            <figure>
+                <img src="images/Desserts/d1.jpg" width="340px" height="330px" onclick="showInfo('info1')"> 
+                <figcaption>Gulab Jamun</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info2')" > 
+                <img src="images/Desserts/d2.jpg" width="340px" height="330px"> 
+                <figcaption>Kaju Burfi</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info3')"> 
+                <img src="images/Desserts/d3.jpg"width="340px" height="330px"> 
+                <figcaption>Rasgulla</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info4')"> 
+                <img src="images/Desserts/d4.jpg"width="340px" height="330px"> 
+                <figcaption>Shrikhand</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info5')"> 
+                <img src="images/Desserts/d5.jpg"width="340px" height="330px"> 
+                <figcaption>Mango Halwa</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info6')"> 
+                <img src="images/Desserts/d6.jpg"width="340px" height="330px"> 
+                <figcaption>Toasted Coconut Ladoo</figcaption> 
+            </figure>
+            <figure>
+                <img src="images/Desserts/d7.jpg" width="340px" height="330px" onclick="showInfo('info7')"> 
+                <figcaption>Rasmalai</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info8')" > 
+                <img src="images/Desserts/d8.jpg" width="340px" height="330px"> 
+                <figcaption>Mysore Pak</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info9')"> 
+                <img src="images/Desserts/d9.jpg"width="340px" height="330px"> 
+                <figcaption>Fruit Custard</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info10')"> 
+                <img src="images/Desserts/d10.jpg"width="340px" height="330px"> 
+                <figcaption>Peanut Chikki</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info11')"> 
+                <img src="images/Desserts/d11.jpg"width="340px" height="330px"> 
+                <figcaption>Date Balls</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info12')"> 
+                <img src="images/Desserts/d12.jpg"width="340px" height="330px"> 
+                <figcaption>Karanji</figcaption> 
+            </figure> 
+            <div id="infoBox" class="info-box">
+                <span class="close" onclick="hideInfo()">&times;</span>
+                <div id="infoContent"></div>
+            </div>
+        </div>
+    </div>
+<script>
+    function showInfo(infoId) {
+    var infoBox = document.getElementById('infoBox');
+    var infoContent = document.getElementById('infoContent');
+    switch (infoId) {
+        case 'info1':
+        case 'info1':
+            infoContent.innerHTML = "<h2>Gulab Jamun</h2><p>To prepare Gulab Jamun, start by combining 1 cup of milk powder, 1/4 cup of all-purpose flour, 1/4 teaspoon of baking soda, and 2 tablespoons of ghee in a bowl. Mix well and gradually add milk to form a soft dough. Let the dough rest for 10 minutes. Meanwhile, prepare the sugar syrup by boiling 2 cups of sugar with 1.5 cups of water until the sugar dissolves. Add a few cardamom pods and a splash of rose water, then simmer for a few minutes. Shape the dough into small balls and fry them in medium-hot oil until golden brown. Transfer the fried balls to the warm sugar syrup and let them soak for at least 2 hours before serving.</p>";
+            break;
+        case 'info2':
+            infoContent.innerHTML = "<h2>Kaju Burfi</h2><p>For Kaju Burfi, grind 2 cups of cashews into a fine powder. In a pan, combine 1 cup of sugar and 1/2 cup of water and cook until the sugar dissolves and forms a syrup. Add the cashew powder and stir continuously over low heat until the mixture thickens and starts to leave the sides of the pan. Transfer the mixture to a greased tray and spread it evenly. Let it cool slightly before cutting into diamond-shaped pieces.</p>";
+            break;
+        case 'info3':
+            infoContent.innerHTML = "<h2>Rasgulla</h2><p>To prepare Rasgulla, start by boiling 1 liter of milk and adding 2 tablespoons of lemon juice to curdle it. Strain the curdled milk through a muslin cloth and wash it under cold water to remove the lemon flavor. Hang the cloth for about 30 minutes to drain excess water. Knead the chenna (paneer) until smooth and form small balls. In a large pot, boil 1 cup of sugar with 4 cups of water to make a sugar syrup. Add the chenna balls to the boiling syrup and cook for 15-20 minutes until they double in size. Let the rasgullas cool in the syrup before serving.</p>";
+            break;
+        case 'info4':
+            infoContent.innerHTML = "<h2>Shrikhand</h2><p>For Shrikhand, hang 2 cups of yogurt in a muslin cloth for 4-5 hours to drain the whey. Transfer the thickened yogurt to a bowl and whisk in 1/2 cup of powdered sugar, 1/4 teaspoon of cardamom powder, and a pinch of saffron soaked in 1 tablespoon of warm milk. Chill the shrikhand in the refrigerator for a few hours before serving, garnished with chopped nuts.</p>";
+            break;
+        case 'info5':
+            infoContent.innerHTML = "<h2>Mango Halwa</h2><p>To prepare Mango Halwa, heat 2 tablespoons of ghee in a pan and add 1 cup of semolina (sooji). Roast the semolina on low heat until it turns golden brown. In a separate pan, heat 1 cup of mango puree, 1 cup of water, and 1/2 cup of sugar until the sugar dissolves. Gradually add the mango mixture to the roasted semolina, stirring continuously to avoid lumps. Cook until the halwa thickens and starts to leave the sides of the pan. Garnish with chopped nuts before serving.</p>";
+            break;
+        case 'info6':
+            infoContent.innerHTML = "<h2>Toasted Coconut Ladoo</h2><p>For Toasted Coconut Ladoo, toast 2 cups of desiccated coconut in a dry pan until lightly golden. In a separate pan, heat 1/2 cup of condensed milk and 1/4 cup of sugar until the sugar dissolves. Add the toasted coconut and mix well. Cook for a few minutes until the mixture thickens. Let it cool slightly before shaping into small ladoos. Roll the ladoos in additional desiccated coconut before serving.</p>";
+            break;
+        case 'info7':
+            infoContent.innerHTML = "<h2>Rasmalai</h2><p>To prepare Rasmalai, start by making rasgullas (as described above). For the rasmalai milk, boil 1 liter of milk until it reduces to half. Add 1/2 cup of sugar, a few saffron strands, and 1/4 teaspoon of cardamom powder. Add the prepared rasgullas to the thickened milk and let them soak for a few hours in the refrigerator. Garnish with chopped pistachios before serving.</p>";
+            break;
+        case 'info8':
+            infoContent.innerHTML = "<h2>Mysore Pak</h2><p>For Mysore Pak, heat 1 cup of ghee in a pan until it melts. In another pan, combine 1 cup of sugar with 1/4 cup of water and cook until the sugar dissolves and forms a syrup. Add 1 cup of gram flour (besan) to the syrup, stirring continuously to avoid lumps. Gradually add the melted ghee while stirring continuously until the mixture thickens and starts to leave the sides of the pan. Pour the mixture into a greased tray and let it cool slightly before cutting into pieces.</p>";
+            break;
+        case 'info9':
+            infoContent.innerHTML = "<h2>Fruit Custard</h2><p>To prepare Fruit Custard, mix 2 tablespoons of custard powder with 1/4 cup of cold milk to form a smooth paste. Boil 2 cups of milk and add 1/4 cup of sugar. Gradually add the custard paste to the boiling milk, stirring continuously to avoid lumps. Cook until the custard thickens, then remove from heat and let it cool. Add a variety of chopped fruits (such as apples, bananas, grapes, and mangoes) to the cooled custard and refrigerate for a few hours before serving.</p>";
+            break;
+        case 'info10':
+            infoContent.innerHTML = "<h2>Peanut Chikki</h2><p>For Peanut Chikki, roast 1 cup of peanuts in a dry pan until lightly golden. Remove the skins and coarsely crush the peanuts. In a separate pan, melt 1 cup of jaggery with 2 tablespoons of water and cook until it forms a hard ball stage (drop a small amount into cold water; it should harden immediately). Add the crushed peanuts and mix well. Pour the mixture onto a greased tray and spread it evenly. Let it cool slightly before cutting into pieces.</p>";
+            break;
+        case 'info11':
+            infoContent.innerHTML = "<h2>Date Balls</h2><p>To prepare Date Balls, remove the pits from 1 cup of dates and chop them finely. In a pan, melt 2 tablespoons of ghee and add the chopped dates. Cook until the dates soften and form a sticky mixture. Add 1/2 cup of chopped nuts (such as almonds, walnuts, and cashews) and mix well. Let the mixture cool slightly before shaping into small balls. Roll the date balls in desiccated coconut before serving.</p>";
+            break;
+        case 'info12':
+            infoContent.innerHTML = "<h2>Karanji</h2><p>For Karanji, make the dough by combining 2 cups of all-purpose flour with 1/4 cup of melted ghee and enough water to form a soft dough. Let the dough rest for 30 minutes. For the filling, mix 1 cup of grated coconut, 1/2 cup of powdered sugar, 1/4 cup of chopped nuts, and 1/4 teaspoon of cardamom powder. Roll out small portions of the dough into circles and place a spoonful of the filling in the center. Fold the dough over to form a half-moon shape and seal the edges. Fry the karanji in medium-hot oil until golden brown. Let them cool before serving.</p>";
+            break;
+        default:
+            infoContent.innerHTML = "<h2>Unknown</h2><p>No details available.</p>";
+    }
+    
+    infoBox.style.display = 'block';
+}
+
+function hideInfo() {
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = 'none';
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <footer style="text-align: center;background-color: rgb(161, 171, 179);margin-top: 125%;padding-bottom: 2%;padding-top: 2%;"><b>
+        &copy;2024 Lohitha's Company.<br>
+        All rights are reserved.<br>
+        flavourFusion@gmail.com<br>
+        Ongole<br>
+        Andhra Pradesh<br>
+    </b>
+     </footer>            
+</body>
+</html>

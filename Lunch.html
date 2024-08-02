@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <title>Lunch</title>
+        <link rel="stylesheet" href="Styles5.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            td{
+                padding-block: 2px;
+                padding: 2px;
+            }
+        </style>
+    </head>
+    <body style="background-image: url(images/lunch/lunch.jpg);"class="page">
+        <div class="page">
+            <div class="nav">
+                <h3 class="logo">
+                    <font face="logo" size="9" style="color:antiquewhite">𝕱𝖑𝖆𝖛𝖔𝖚𝖗 𝕱𝖚𝖘𝖎𝖔𝖓</font>
+                </h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Recipes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(104, 29, 104);">
+                            <a class="dropdown-item" href="./Breakfast.html">Breakfast</a>
+                            <a class="dropdown-item" href="./Lunch.html">Lunch</a>
+                            <a class="dropdown-item" href="./Desserts.html">Desserts</a>
+                            <a class="dropdown-item" href="./Salads.html">Salads</a>
+                        </div>
+                    </li>
+                    <li><a href="./Recipes.html">Fusion</a></li>
+                    <li><a href="./AboutUs.html">AboutUs</a></li>
+                    <li><a href="./ContactUs.html">ContactUs</a></li>
+                    <li><a href="./SignIn.html">SignIn</a></li>
+                </ul>
+            </div>
+        <div class="b">
+            <h1>A well-prepared lunch is like a love letter to yourself.</h1>
+            <p>Cooking is like love. It should be entered into with abandon or not at all.</p><br/><br>
+        </div>
+    </div>
+    <div class="r">
+        <center>
+            <table class="t">
+                <tr>
+                    <td><img src="images/lunch/v6.jpg" style="background-size: cover;display: flex;width: 170px;height: 270px;"></td>
+                    <td><img src="images/lunch/v7.jpg" style="background-size: cover;display: flex;width: 170px;height: 270px;"></td>
+                    <td><img src="images/lunch/v8.jpg" style="background-size: cover;display: flex;width: 170px;height: 270px;"></td>
+                    <td><img src="images/lunch/v9.jpg" style="background-size: cover;display: flex;width: 170px;height: 270px;"></td>
+                </tr>
+            </table>
+        </center>
+        <h1 style="color:rgb(202, 234, 157);text-align: center;font-size: xxx-large;"><b>Vegetarian Items</b></h1>
+        <div class="gallery"> 
+            <figure>
+                <img src="images/lunch/l1.jpg" width="340px" height="330px" onclick="showInfo('info1')"> 
+                <figcaption>Veg Biryani</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info2')" > 
+                <img src="images/lunch/l2.jpg" width="340px" height="330px"> 
+                <figcaption>Tomato Rice</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info3')"> 
+                <img src="images/lunch/l3.jpg"width="340px" height="330px"> 
+                <figcaption>Paneer Biryani</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info4')"> 
+                <img src="images/lunch/l4.jpg"width="340px" height="330px"> 
+                <figcaption>Coconut Rice</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info5')"> 
+                <img src="images/lunch/l5.jpg"width="340px" height="330px"> 
+                <figcaption>Vegetable Fried Rice</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info6')"> 
+                <img src="images/lunch/l6.jpg"width="340px" height="330px"> 
+                <figcaption>Meethi Pulav</figcaption> 
+            </figure>
+            <div id="infoBox" class="info-box">
+                <span class="close" onclick="hideInfo()">&times;</span>
+                <div id="infoContent"></div>
+            </div>
+        </div> 
+        <h1 style="color:rgb(202, 234, 157);text-align: center;font-size: xxx-large;"><b>Non-Vegetarian Items</b></h1>
+            <div class="gallery">
+            <figure>
+                <img src="images/lunch/l7.jpg" width="340px" height="330px" onclick="showInfo('info7')"> 
+                <figcaption>Chicken Biryani</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info8')" > 
+                <img src="images/lunch/l8.jpg" width="340px" height="330px"> 
+                <figcaption>Mutton Biryani</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info9')"> 
+                <img src="images/lunch/l9.jpg"width="340px" height="330px"> 
+                <figcaption>Fish Biryani</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info10')"> 
+                <img src="images/lunch/l10.jpg"width="340px" height="330px"> 
+                <figcaption>Chicken Fried Rice</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info11')"> 
+                <img src="images/lunch/l11.jpg"width="340px" height="330px"> 
+                <figcaption>Egg Biryani</figcaption> 
+            </figure> 
+            <figure onclick="showInfo('info12')"> 
+                <img src="images/lunch/l12.jpg"width="340px" height="330px"> 
+                <figcaption>Chicken Lollipop Biryani</figcaption> 
+            </figure> 
+            <div id="infoBox" class="info-box">
+                <span class="close" onclick="hideInfo()">&times;</span>
+                <div id="infoContent"></div>
+            </div>
+        </div>
+        </div> 
+    </div>
+<script>
+    function showInfo(infoId) {
+    var infoBox = document.getElementById('infoBox');
+    var infoContent = document.getElementById('infoContent');
+    switch (infoId) {
+        case 'info1':
+            infoContent.innerHTML = "<h2>Vegetable Biryani</h2><p>To prepare veg biryani, start by washing and soaking 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. In a large pan, heat 3 tablespoons of ghee or oil and add a bay leaf, 3 cloves, a 1-inch cinnamon stick, and 2 cardamoms. Sauté for a minute before adding a large, thinly sliced onion and 2 slit green chilies. Cook until the onions turn golden brown, then add 1 tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Next, add a chopped tomato and cook until it softens. Incorporate 2 cups of mixed vegetables (such as carrot, peas, beans, and potato) and cook for a few minutes. Stir in 1/2 cup of yogurt, 2 tablespoons of biryani masala, 1 teaspoon of red chili powder, 1/2 teaspoon of turmeric powder, and salt to taste, mixing well. Add the drained rice and mix gently to coat the rice with the spices. Pour in 3 cups of water, then add a handful of chopped coriander and mint leaves, mixing well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, which should take about 15-20 minutes. Once done, drizzle a pinch of saffron soaked in 2 tablespoons of warm milk over the biryani, cover, and let it rest for 5 minutes. Finally, fluff the biryani gently with a fork before serving.</p>";
+            break;
+        case 'info2':
+            infoContent.innerHTML = "<h2>Tomato Rice</h2><p>To prepare tomato rice, start by washing and soaking 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Heat 3 tablespoons of oil in a pan and add a teaspoon of mustard seeds and a teaspoon of cumin seeds. Once they splutter, add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add a tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Add 3 chopped tomatoes and cook until they become soft and mushy. Stir in a teaspoon of turmeric powder, a teaspoon of red chili powder, and salt to taste. Add the drained rice and mix gently to coat the rice with the tomato mixture. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 15-20 minutes. Fluff the tomato rice gently with a fork before serving.</p>";
+            break;
+        case 'info3':
+            infoContent.innerHTML = "<h2>Paneer Biryani</h2><p>For paneer biryani, wash and soak 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Heat 3 tablespoons of ghee or oil in a large pan and add a bay leaf, 3 cloves, a 1-inch cinnamon stick, and 2 cardamoms, sautéing for a minute. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add a tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Add 1.5 cups of cubed paneer and cook until lightly browned. Stir in 1/2 cup of yogurt, 2 tablespoons of biryani masala, a teaspoon of red chili powder, a teaspoon of turmeric powder, and salt to taste, mixing well. Add the drained rice and mix gently to coat the rice with the spices. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 15-20 minutes. Fluff the paneer biryani gently with a fork before serving.</p>";
+            break;
+        case 'info4':
+            infoContent.innerHTML = "<h2>Coconut Rice</h2><p>To prepare coconut rice, wash and soak 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Heat 3 tablespoons of oil in a pan and add a teaspoon of mustard seeds, a teaspoon of cumin seeds, a tablespoon of chana dal, and a tablespoon of urad dal. Once they splutter, add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add a tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Stir in 1.5 cups of grated coconut and sauté for a few minutes. Add the drained rice and mix gently to coat the rice with the coconut mixture. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 15-20 minutes. Fluff the coconut rice gently with a fork before serving.</p>";
+            break;
+        case 'info5':
+            infoContent.innerHTML = "<h2>Vegetable Fried Rice</h2><p>For veg fried rice, wash and soak 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Cook the rice in 3 cups of water until fully cooked, then spread it on a plate to cool. Heat 3 tablespoons of oil in a large pan and add a teaspoon of finely chopped garlic and a teaspoon of finely chopped ginger, sautéing until fragrant. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn translucent. Add 2 cups of mixed vegetables (such as carrot, peas, beans, and bell pepper) and cook until tender. Stir in 2 tablespoons of soy sauce, a tablespoon of vinegar, a teaspoon of black pepper, and salt to taste. Add the cooled rice and mix gently to combine with the vegetables and sauce. Cook for a few minutes until everything is heated through. Fluff the veg fried rice gently with a fork before serving.</p>";
+            break;
+        case 'info6':
+            infoContent.innerHTML = "<h2>Methi Pulav</h2><p>To prepare methi pulav, start by washing and soaking 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Heat 3 tablespoons of ghee or oil in a large pan and add a bay leaf, 3 cloves, a 1-inch cinnamon stick, and 2 cardamoms, sautéing for a minute. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add a tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Stir in 2 cups of fresh methi (fenugreek) leaves, washed and chopped, and cook until the leaves wilt and the raw smell is gone. Add a chopped tomato and cook until it softens. Stir in a teaspoon of turmeric powder, a teaspoon of red chili powder, and salt to taste. Add the drained rice and mix gently to coat the rice with the methi mixture. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 15-20 minutes. Fluff the methi pulav gently with a fork before serving.</p>";
+            break;
+        case 'info7':
+            infoContent.innerHTML = "<h2>Chicken Biryani</h2><p>To prepare chicken biryani, start by washing and soaking 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. In a large pan, heat 3 tablespoons of ghee or oil and add a bay leaf, 3 cloves, a 1-inch cinnamon stick, and 2 cardamoms, sautéing for a minute. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add a tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Add 500 grams of chicken pieces and cook until they are no longer pink. Add a chopped tomato and cook until it softens. Stir in 1/2 cup of yogurt, 2 tablespoons of biryani masala, a teaspoon of red chili powder, a teaspoon of turmeric powder, and salt to taste. Mix well, then add the drained rice and mix gently to coat the rice with the spices. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 15-20 minutes. Fluff the chicken biryani gently with a fork before serving.</p>";
+            break;
+        case 'info8':
+            infoContent.innerHTML = "<h2>Mutton Biryani</h2><p>To prepare mutton biryani, start by washing and soaking 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. In a large pan, heat 3 tablespoons of ghee or oil and add a bay leaf, 3 cloves, a 1-inch cinnamon stick, and 2 cardamoms, sautéing for a minute. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add a tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Add 500 grams of mutton pieces and cook until they are browned on all sides. Add a chopped tomato and cook until it softens. Stir in 1/2 cup of yogurt, 2 tablespoons of biryani masala, a teaspoon of red chili powder, a teaspoon of turmeric powder, and salt to taste. Mix well, then add the drained rice and mix gently to coat the rice with the spices. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 20-30 minutes. Ensure the mutton is tender; if needed, cook it longer or use a pressure cooker. Fluff the mutton biryani gently with a fork before serving..</p>";
+            break;
+        case 'info9':
+            infoContent.innerHTML = "<h2>Fish Biryani</h2><p>To prepare fish biryani, use 500 grams of firm white fish fillets cut into chunks. Wash and soak 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Heat 3 tablespoons of ghee or oil in a large pan and add a bay leaf, 3 cloves, a 1-inch cinnamon stick, and 2 cardamoms, sautéing for a minute. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add a tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Add a chopped tomato and cook until it softens. Stir in 1/2 cup of yogurt, 2 tablespoons of biryani masala, a teaspoon of red chili powder, a teaspoon of turmeric powder, and salt to taste. Add the fish pieces and cook gently until they are opaque. Add the drained rice and mix gently to coat the rice with the spices. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 15-20 minutes. Fluff the fish biryani gently with a fork before serving.</p>";
+            break;
+        case 'info10':
+            infoContent.innerHTML = "<h2>Chicken Fried Rice</h2><p>For chicken fried rice, wash and soak 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Cook the rice in 3 cups of water until fully cooked, then spread it on a plate to cool. Heat 3 tablespoons of oil in a large pan and add a teaspoon of finely chopped garlic and a teaspoon of finely chopped ginger, sautéing until fragrant. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn translucent. Add 250 grams of boneless chicken, cut into small pieces, and cook until the chicken is no longer pink. Add 2 cups of mixed vegetables (such as carrot, peas, beans, and bell pepper) and cook until tender. Stir in 2 tablespoons of soy sauce, a tablespoon of vinegar, a teaspoon of black pepper, and salt to taste. Add the cooled rice and mix gently to combine with the vegetables, chicken, and sauce. Cook for a few minutes until everything is heated through. Fluff the chicken fried rice gently with a fork before serving.</p>";
+            break;
+        case 'info11':
+            infoContent.innerHTML = "<h2>Egg Biryani</h2><p>For egg biryani, wash and soak 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Hard boil 6 eggs, peel, and set aside. Heat 3 tablespoons of ghee or oil in a large pan and add a bay leaf, 3 cloves, a 1-inch cinnamon stick, and 2 cardamoms, sautéing for a minute. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add a tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Add a chopped tomato and cook until it softens. Stir in 1/2 cup of yogurt, 2 tablespoons of biryani masala, a teaspoon of red chili powder, a teaspoon of turmeric powder, and salt to taste. Add the boiled eggs, making small slits in them to allow the spices to penetrate. Add the drained rice and mix gently to coat the rice with the spices. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 15-20 minutes. Fluff the egg biryani gently with a fork before serving.</p>";
+            break;
+        case 'info12':
+            infoContent.innerHTML = "<h2>Chiken Lollipop Biryani</h2><p>To prepare chicken lollipop biryani, start by washing and soaking 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Marinate 500 grams of chicken lollipop in 1/2 cup of yogurt, a tablespoon of ginger-garlic paste, a teaspoon of red chili powder, a teaspoon of turmeric powder, 2 tablespoons of biryani masala, and salt to taste. Heat 3 tablespoons of ghee or oil in a large pan and add a bay leaf, 3 cloves, a 1-inch cinnamon stick, and 2 cardamoms, sautéing for a minute. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add the marinated chicken lollipop and cook until the chicken is no longer pink. Add a chopped tomato and cook until it softens. Add the drained rice and mix gently to coat the rice with the spices. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 15-20 minutes. Fluff the chicken lollipop biryani gently with a fork before serving.</p>";
+            break;
+        default:
+            infoContent.innerHTML = "<h2>Unknown</h2><p>No details available.</p>";
+    }
+    
+    infoBox.style.display = 'block';
+}
+
+function hideInfo() {
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = 'none';
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <footer style="text-align: center;background-color: rgb(161, 171, 179);margin-top: 117%;padding-bottom: 2%;padding-top: 2%;"><b>
+    &copy;2024 Lohitha's Company.<br>
+    All rights are reserved.<br>
+    flavourFusion@gmail.com<br>
+    Ongole<br>
+    Andhra Pradesh<br>
+</b>
+ </footer>    
+</body>
+</html>
